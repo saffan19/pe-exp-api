@@ -237,7 +237,7 @@ app.get('/getPosts/:branch',(req,res)=>{
         //     });
             for(i of result)
             {
-               await axios.get('https://placementexperience-api.herokuapp.com/getUser/'+i["user_id"])
+               await axios.get('https://pe-exp-api.herokuapp.com/getUser/'+i["user_id"])
                 .then(response => {
                              i["name"]=response.data["name"];
                              posts.push(i);
