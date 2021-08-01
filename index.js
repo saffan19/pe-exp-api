@@ -65,6 +65,7 @@ app.post('/login',(req,res)=>{
         catch(e)
         {
             console.log("wrong")
+            res.send({"msg":"failed"});
         }
 
         
