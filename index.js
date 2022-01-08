@@ -29,11 +29,19 @@ app.use(function (req, res, next) {
     next();
 });
 //
+// const db = mysql.createPool({
+//     host:'remotemysql.com',
+//     user:'ydTQLJ2QTo',
+//     password:'50LyPmyy7z',
+//     database:'ydTQLJ2QTo',
+//     port:3306
+// })
+//NEW DB:
 const db = mysql.createPool({
-    host:'remotemysql.com',
-    user:'ydTQLJ2QTo',
-    password:'50LyPmyy7z',
-    database:'ydTQLJ2QTo',
+    host:'us-cdbr-east-05.cleardb.net',
+    user:'ba9e3972d0ec80',
+    password:'93897dd9',
+    database:'heroku_377347f17f45849',
     port:3306
 })
 app.get('/',(req,res)=>{
